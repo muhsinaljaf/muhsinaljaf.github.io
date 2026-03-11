@@ -8,61 +8,54 @@ author_profile: true
 
 *"Somewhere, something incredible is waiting to be known."* — Carl Sagan
 
+
 ## About Me
 
-Welcome to my homepage!
+Welcome to my homepage! I am a physicist working on cosmology and gravitational physics. My research focuses on understanding the Universe through theoretical modeling and computational simulations. In particular, I study primordial black holes, binary black hole mergers, and gravitational waves.
 
-I am a PhD researcher in **Applied and Computational Physics at Oakland University**, working in **cosmology and gravitational-wave astrophysics**. My research focuses on understanding the nature of **primordial black holes and their role in the Universe**, including their merger dynamics and gravitational-wave signatures.
+More generally, I am interested in some fundamental questions in cosmology, such as the nature of dark matter, the evolution of compact objects, and the physics of the early Universe.
 
-More broadly, I am interested in fundamental questions in cosmology and gravitation, including the physics of compact objects, dark matter candidates, and the evolution of the Universe.
+In particular, I am interested in:
 
-### Research Interests
+- primordial black holes as dark matter  
+- binary black hole mergers and gravitational waves  
+- cosmological structure formation  
+- computational and numerical astrophysics  
 
-- Primordial Black Holes as Dark Matter  
-- Binary Black Hole Merger Rates  
-- Gravitational Wave Astrophysics  
-- Cosmological Structure Formation  
-- Numerical and Computational Astrophysics
-
----
 
 ## Education
 
 **PhD in Applied and Computational Physics**  
-Oakland University, USA  
+Oakland University, United States
 
 **M.Sc. in Astrophysics**  
-University of Science and Technology of China (USTC), Hefei, China  
+University of Science and Technology of China (USTC), Hefei, China
 
 **B.Sc. in Physics**  
-University of Sulaimani, Kurdistan Region  
+University of Sulaimani, Kurdistan Region of Iraq
 
----
 
-## Background
 
-I was born in **Kawcharmu**, a small village in the Kurdistan Region of Iraq. I spent my early childhood there before moving to **Rizgary**, where I completed my secondary education.
+## A Brief History
 
-Driven by a deep curiosity about nature and the Universe, I pursued physics at the **University of Sulaimani**, where I obtained my bachelor's degree. During those years I developed a strong interest in **fundamental physics and cosmology**.
+I was born in Kawcharmu, a small village in the southeast of the Kurdistan Region of Iraq. I spent my early childhood there and completed my primary education.
 
-To continue my journey in theoretical astrophysics, I moved to **Hefei, China**, where I studied astrophysics at the **University of Science and Technology of China (USTC)** with support from the **China Scholarship Council**. This period allowed me to deepen my understanding of cosmology and gain international research experience.
+At the age of seven, my family moved to Rizgary, a small town where I continued my education until finishing high school.
 
-Today I continue my research in the United States, studying the **formation and evolution of primordial black hole binaries and their gravitational-wave signals**.
+Motivated by a strong curiosity about nature and science, I moved north to study physics at the **University of Sulaimani**, where I spent four wonderful years and obtained my B.Sc. in Physics.
 
----
+My interest in fundamental physics later took me abroad. I moved to Hefei, China, to study astrophysics at the **University of Science and Technology of China (USTC)** with support from the China Scholarship Council. After three years of study and research, I completed my M.Sc. in Astrophysics.
+
+Today I continue my research in the United States as a PhD student in Applied and Computational Physics at **Oakland University**.
+
+
 
 ## Outside Physics
 
-Outside research, I enjoy:
+Outside physics, I enjoy reading and having long conversations with friends about philosophy, evolution, and human psychology.
 
-- Reading about philosophy, evolution, and psychology  
-- Traveling and learning about different cultures  
-- Learning languages  
+I also enjoy traveling, meeting people from different cultures, and learning languages. During my time in China, I spent one year studying the Chinese language at Anhui Normal University. This helped me communicate better and explore Chinese culture more deeply.
 
-I speak **Kurdish, English, and Persian**, and have studied **Chinese** and **Arabic**.
+When it comes to art, I am a music enthusiast. I enjoy listening to many styles of music, from classical composers like Bach and Mozart to modern film composers such as Hans Zimmer.
 
-Music is also a major passion of mine. I enjoy a wide range of styles, from classical composers such as **Bach** and **Mozart** to modern film composers like **Hans Zimmer**.
-
-Department of Physics  
-
-Email: *[your email here]*  
+I speak Kurdish, English, and Persian, and I have also studied Chinese and Arabic.
