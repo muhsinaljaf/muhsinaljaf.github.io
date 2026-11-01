@@ -209,3 +209,5 @@ html, body, .page__content, .sidebar, .author__name, .author__bio, .author__urls
 /* Wider text column: drop the empty right gutter the theme reserves for a table of contents */
 @media (min-width: 57.8125em) { .page { padding-right: 2.5%; } }
 .ri__fig { max-width: 560px; }
+.ri__lead { font-size: 1.05em; border-left: 3px solid var(--ma-line); padding-left: .9em; }
+.ri ol { margin: 0 0 .6em 1.2em; }
