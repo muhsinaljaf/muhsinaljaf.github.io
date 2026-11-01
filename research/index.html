@@ -309,47 +309,74 @@
       
 
       <section class="page__content" itemprop="text">
-        <p>I use gravitational waves from merging black holes to test whether some of the dark matter is made of <strong>primordial black holes</strong>. My work follows these black holes from the early Universe, through the dark matter halos where they live, to the signals that LIGO–Virgo–KAGRA and future observatories detect.</p>
+        <p>I am a computational astrophysicist, and I ask a simple question: <strong>where do the binary black holes that gravitational-wave detectors observe come from?</strong> The LIGO–Virgo–KAGRA (LVK) catalog GWTC-5 now holds about 390 candidates, mostly binary black hole mergers. Their rate grows with redshift, their masses peak near 10 M<sub>⊙</sub> and reach into the pair-instability gap where stars should leave no black hole, most have near-zero spin, and a few show signs of residual eccentricity. No single formation channel explains all of this. Some of these black holes may be <strong>primordial black holes (PBHs)</strong>, formed in the early Universe and a candidate for the dark matter. Even if only ~0.1% of the dark matter were PBHs, they would merge at a rate comparable to what LVK observes, so the catalog can limit, or measure, that fraction. Doing so needs accurate PBH merger rates and a signature that separates PBHs from stellar black holes. That is what my work provides.</p>
 
 <div class="ri">
   <div class="ri__text">
     <h2 id="binaries-in-a-crowded-halo">Binaries in a crowded halo</h2>
-    <p>Primordial black hole binaries do not evolve alone: as structure forms, most of them fall into dark matter halos. I built simulations that follow halos from 10<sup>3</sup> to 10<sup>15</sup> solar masses as they grow, and track how close encounters with other black holes harden or soften the binaries inside them. These interactions can produce more mergers than direct captures, even if only ~1% of primordial black holes are in binaries.</p>
-    <p class="ri__refs"><a href="https://doi.org/10.1103/PhysRevD.111.063020">Aljaf &amp; Cholis (2025)</a></p>
+    <p>PBH binaries form before matter–radiation equality (<i>z</i> ≈ 3400). Earlier calculations assumed they then stay isolated until they merge. In reality, from <i>z</i> ≈ 12 onward most PBHs fall into dark matter halos, where encounters with other PBHs <strong>harden</strong> a binary (speeding up its merger), <strong>soften</strong> it, or break it apart. This leaves three merger channels: GW captures between single PBHs, binary–single interactions inside halos, and unperturbed binaries that stay outside halos.</p>
+    <p>With I. Cholis, I built a numerical framework that includes all three channels, simulating millions of PBH binaries in growing halos of 10<sup>4</sup>–10<sup>15</sup> M<sub>⊙</sub> and following each binary shell by shell. Binaries in low-mass halos and in the dense inner regions of large halos are hardened strongly, so this channel matters even if only ~1% of PBHs are in binaries.</p>
+    <p class="ri__refs"><a href="https://doi.org/10.1103/PhysRevD.111.063020">Aljaf &amp; Cholis, PRD 111, 063020 (2025)</a> · <a href="https://doi.org/10.1103/qkjt-sytc">Aljaf &amp; Cholis, PRD 113, 123001 (2026)</a></p>
   </div>
-  <figure class="ri__fig"><img src="/images/research/halo-shells.png" alt="Mass in each shell of a growing dark matter halo versus time" /><figcaption>A Milky-Way-sized halo growing shell by shell in our simulation.</figcaption></figure>
+  <figure class="ri__fig"><img src="/images/research/binary-encounter.png" alt="Semi-major axis of a PBH binary versus time, isolated and inside different halo shells" /><figcaption>A PBH binary shrinking over time: isolated (black) and after entering different shells of a 10<sup>12</sup> M<sub>⊙</sub> halo. Encounters in inner shells speed up the merger.</figcaption></figure>
 </div>
 
 <div class="ri">
   <div class="ri__text">
     <h2 id="merger-rates-across-cosmic-time">Merger rates across cosmic time</h2>
-    <p>The standard merger rate assumes every binary stays isolated until it merges. I developed a framework that combines isolated binaries, binaries perturbed inside halos, and late captures into one consistent rate up to redshift 10. At the redshifts LIGO observes (<i>z</i> ≲ 2), halo encounters raise the rate by about 50%, and most mergers happen inside halos. Our rates are public on Zenodo.</p>
-    <p class="ri__refs"><a href="https://doi.org/10.1103/qkjt-sytc">Aljaf &amp; Cholis (2026)</a></p>
+    <p><strong>At the redshifts LVK observes (<i>z</i> ≲ 2), hardening inside halos raises the total PBH merger rate by about 50% over the standard unperturbed rate.</strong> I also corrected the analytical unperturbed rate by evolving large samples of binaries and counting only those still outside halos: they make up only ~20% of mergers at <i>z</i> ≈ 1 and ~10% today. GW captures are subdominant and come mostly from small halos. Unlike the astrophysical rate, the PBH rate keeps rising beyond <i>z</i> ≈ 2, which next-generation detectors can test.</p>
+    <p>The rates for every channel are public on <a href="https://zenodo.org/records/17918405">Zenodo</a>.</p>
+    <p class="ri__refs"><a href="https://doi.org/10.1103/qkjt-sytc">Aljaf &amp; Cholis, PRD 113, 123001 (2026)</a></p>
   </div>
-  <figure class="ri__fig"><img src="/images/research/merger-rate-channels.png" alt="PBH merger rate versus redshift for each channel" /><figcaption>Merger rate by channel; green is the total.</figcaption></figure>
+  <figure class="ri__fig"><img src="/images/research/merger-rate-channels.png" alt="PBH merger rate versus redshift for each channel" /><figcaption>Merger rate vs. redshift by channel; green is the total and gray dashed the standard unperturbed rate (<i>f</i><sub>PBH</sub> = 1, half of PBHs in binaries).</figcaption></figure>
 </div>
 
 <div class="ri">
   <div class="ri__text">
-    <h2 id="eccentric-echoes-for-space-detectors">Eccentric echoes for space detectors</h2>
-    <p>Primordial binaries are born on very elongated orbits, and halo encounters can stretch them again. I followed their full orbital evolution to merger and computed what each detector would see. By the time they reach LIGO, ET or Cosmic Explorer they are circular, but LISA and DECIGO could detect around a hundred with eccentricity above 0.01, a distinctive fingerprint of primordial origin.</p>
-    <p class="ri__refs"><a href="https://arxiv.org/abs/2607.23892">Aljaf &amp; Cholis (2026)</a></p>
+    <h2 id="which-halos-host-the-mergers">Which halos host the mergers</h2>
+    <p>The binary–single rate depends on the halo: Milky-Way-sized halos (10<sup>12</sup> M<sub>⊙</sub>) dominate today, while the smallest halos take over at high redshift and the most massive clusters contribute little there because they have not formed yet. The choice of halo mass function alone changes this rate by a factor of 6–8 up to <i>z</i> ≈ 1. For GW captures, I extended the rate from a single PBH mass to extended mass distributions: a lognormal distribution gives three times the monochromatic rate in a 10<sup>12</sup> M<sub>⊙</sub> halo.</p>
+    <p class="ri__refs"><a href="https://doi.org/10.1103/PhysRevD.111.063020">Aljaf &amp; Cholis, PRD 111, 063020 (2025)</a></p>
   </div>
-  <figure class="ri__fig"><img src="/images/research/eccentricity-detectors.png" alt="Eccentricity of detectable PBH binaries per detector" /><figcaption>Eccentricity of detectable binaries in each detector's band.</figcaption></figure>
+  <figure class="ri__fig"><img src="/images/research/halo-hosts.png" alt="Binary-single merger rate contributed by halos of different masses versus redshift" /><figcaption>Binary–single merger rate contributed by halos of different present-day mass.</figcaption></figure>
+</div>
+
+<div class="ri">
+  <div class="ri__text">
+    <h2 id="how-the-rate-scales">How the rate scales</h2>
+    <p>The total rate scales as <i>f</i><sub>PBH</sub><sup>2</sup> in all channels and linearly with the fraction of PBHs in binaries, except GW captures, which do not depend on it. With PBH mass, all channels scale as <i>m</i><sup>−0.8</sup> except GW captures, which are mass-independent for a single PBH mass. A lognormal mass distribution raises the rate by a factor of 1.28 over the monochromatic case. These scalings let the rates be applied to any PBH model.</p>
+    <p class="ri__refs"><a href="https://doi.org/10.1103/qkjt-sytc">Aljaf &amp; Cholis, PRD 113, 123001 (2026)</a></p>
+  </div>
+  <figure class="ri__fig"><img src="/images/research/total-rate-fractions.png" alt="Total PBH merger rate versus redshift for different PBH and binary fractions" /><figcaption>Total merger rate for different dark matter fractions in PBHs and fractions of PBHs in binaries.</figcaption></figure>
+</div>
+
+<div class="ri">
+  <div class="ri__text">
+    <h2 id="eccentric-echoes-for-space-detectors">Eccentricity: a fingerprint of primordial origin</h2>
+    <p>Masses alone cannot tell PBHs from stellar black holes, so I looked for a different signature. I evolved millions of 30+30 M<sub>⊙</sub> PBH binaries from all channels, outside halos and in radial shells of five halos, and computed their eccentricity as they enter the bands of aLIGO, the Einstein Telescope (ET), Cosmic Explorer (CE), LISA and DECIGO. For <i>f</i><sub>PBH</sub> = 3.4×10<sup>−3</sup>, ground-based detectors would see from about 60 (aLIGO) to 6–8×10<sup>4</sup> (ET, CE) PBH binaries, all effectively circular. But repeated hardening in dense halo cores keeps some binaries eccentric: <strong>LISA and DECIGO together would detect ~100 PBH binaries with <i>e</i> &gt; 0.01.</strong> If they find none, the limits on <i>f</i><sub>PBH</sub> improve by an order of magnitude.</p>
+    <p class="ri__refs"><a href="https://arxiv.org/abs/2607.23892">Aljaf &amp; Cholis, arXiv:2607.23892 (2026)</a></p>
+  </div>
+  <figure class="ri__fig"><img src="/images/research/eccentricity-detectors.png" alt="Eccentricity of detectable PBH binaries per detector" /><figcaption>Eccentricity at detection of 30+30 M<sub>⊙</sub> PBH binaries in each detector (<i>f</i><sub>PBH</sub> = 3.4×10<sup>−3</sup>).</figcaption></figure>
 </div>
 
 <div class="ri ri--nofig">
   <div class="ri__text">
     <h2 id="reading-the-lvk-catalog">Reading the LVK catalog</h2>
-    <p>With collaborators, I help confront these models with the observed black hole mergers: deriving conservative limits on how much of the dark matter primordial black holes can be, and asking which formation channels (stellar, hierarchical or primordial) produced the black holes in the current catalog. Both studies were led by Mehdi El Bouhaddouti.</p>
+    <p>Using these merger rates, my collaborators and I set 95% upper limits of <i>f</i><sub>PBH</sub> ~ 10<sup>−4</sup>–2×10<sup>−2</sup> for PBHs of 5–80 M<sub>⊙</sub> from LVK O1–O3. A follow-up fit to 153 O1–O4a events with first-generation, hierarchical and primordial populations prefers <i>f</i><sub>PBH</sub> ≈ (3–8)×10<sup>−3</sup> at 30–40 M<sub>⊙</sub>, but this preference depends on how the stellar channels are modeled. Both studies were led by Mehdi El Bouhaddouti.</p>
     <p class="ri__refs"><a href="https://doi.org/10.1103/2kh2-cv8q">El Bouhaddouti, Aljaf &amp; Cholis (2026)</a> · <a href="https://arxiv.org/abs/2603.08785">El Bouhaddouti, Cholis &amp; Aljaf (2026)</a></p>
+  </div>
+</div>
+
+<div class="ri ri--nofig">
+  <div class="ri__text">
+    <h2 id="current-work">Current work: the stochastic background</h2>
+    <p>I am now computing the stochastic gravitational-wave background from PBH binaries for masses of 0.01–100 M<sub>⊙</sub>, with monochromatic and lognormal mass distributions. I am extending my framework with one more channel, exchanges between PBH binaries and single PBHs, and will provide forecasts for current and future detectors.</p>
   </div>
 </div>
 
 <div class="ri">
   <div class="ri__text">
     <h2 id="earlier-dark-energy-and-the-hubble-tension">Earlier: dark energy and the Hubble tension</h2>
-    <p>Before my PhD I worked on the other half of the dark sector. I studied dark energy that interacts with dark matter using dynamical systems, reconstructed the expansion history of the Universe with Gaussian processes, and showed with Bayesian machine learning that <i>f</i>(<i>T</i>) gravity can ease the Hubble tension. I also worked on inflation.</p>
+    <p>During my Master's at the University of Science and Technology of China (USTC), I worked on the other half of the dark sector. I studied dark energy that interacts with dark matter using dynamical systems, reconstructed the expansion history of the Universe with Gaussian processes, and showed with Bayesian machine learning that <i>f</i>(<i>T</i>) gravity can ease the Hubble tension. I also worked on inflation.</p>
     <p class="ri__refs"><a href="https://doi.org/10.1140/epjc/s10052-020-7671-x">Aljaf et al. (2020)</a> · <a href="https://doi.org/10.1140/epjc/s10052-021-09306-2">Aljaf et al. (2021)</a> · <a href="https://doi.org/10.1140/epjc/s10052-022-11109-y">Aljaf et al. (2022)</a> · <a href="https://doi.org/10.1103/PhysRevD.102.063506">Qiu et al. (2020)</a></p>
   </div>
   <figure class="ri__fig"><img src="/images/research/hubble-gp.png" alt="Gaussian-process reconstruction of the Hubble expansion rate" /><figcaption>The expansion rate reconstructed from cosmic chronometers.</figcaption></figure>
